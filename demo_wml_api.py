@@ -36,13 +36,13 @@ from ibm_cloud_sdk_core import IAMTokenManager
 url = "https://us-south.ml.cloud.ibm.com"
 
 # These global variables will be updated in get_credentials() functions
-watsonx_project_id = ""
+watsonx_project_id = "77dccace-2d40-48d0-8843-c1e69e84e113"
 # Replace with your IBM Cloud key
-api_key = ""
+api_key = "EHFLDc1AfS4wsS-2VvsA8n3kwyWkU40MPJIpsXrrGu9i"
 
 def get_credentials():
 
-    load_dotenv(dotenv_path="file.env")
+    load_dotenv(dotenv_path=".env")
 
     # Update the global variables that will be used for authentication in another function
     globals()["api_key"] = os.getenv("api_key", None)
